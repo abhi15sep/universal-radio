@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Universal Radio FM</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section>
+      <video loop muted poster="../assets/images/home.jpg" class="video">
+        <source src="../assets/video/home.mp4" type="video/mp4" />
+        <source src="../assets/video/home.webm" type="video/webm" />
+        <source src="../assets/video/home.ogv" type="video/ogg" />
+      </video>
+    </section>
+
+    <main>
+      <header>
+        <div class="info">
+          <span>Streaming content</span>
+          <span>128 kbps</span>
+          <span>44.1 kHz</span>
+          <span>Stereo</span>
+        </div>
+        <div class="title">
+          <div class="location">Austria, Vienna</div>
+          <div class="h1">Arabella 90s</div>
+          <div class="h1">
+            <input
+              onkeypress="return runSearch(event)"
+              id="radioInput"
+              class="input is-rounded"
+              type="text"
+              placeholder="Search country..."
+            />
+          </div>
+        </div>
+      </header>
+
+      <div class="controls">
+        <div class="buttons">
+          <button class="button-more"></button>
+        </div>
+
+        <div class="buttons">
+          <button class="button-previous"></button>
+          <button class="button-play"></button>
+          <button class="button-next"></button>
+        </div>
+
+        <div class="buttons">
+          <div class="icon-volume volume-high"></div>
+          <div class="progress-volume-outer">
+            <div class="progress-volume-inner"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stations">
+        <ul class="ul"></ul>
+      </div>
+    </main>
+
+    <script src="js/radio.js"></script>
+  </body>
+</html>

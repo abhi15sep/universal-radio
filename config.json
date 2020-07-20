@@ -1,0 +1,10 @@
+{
+  "userDataDir": "Universal-Radio",
+  "name": "universal-radio",
+  "productName": "Universal Radio",
+  "dest": "build/linux/",
+  "icon": "assets/icons/logo.ico",
+  "categories": ["Audio"],
+  "lintianOverrides": ["changelog-file-missing-in-native-package"],
+  "bin": "universal-radio"
+}
